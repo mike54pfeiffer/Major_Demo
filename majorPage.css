@@ -64,50 +64,48 @@ img {
 
 
 /* NAV BAR */
+container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 38px;
-  }
-  
-  .left-side {
-    display: flex;
-  }
-  .nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-  }
-  
-  .nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-  }
-  
-  .active-nav-link {
-    border-bottom: 1px solid black;
-  }
-  
-  .active-nav-link a {
-    color: black !important;
-  }
-
-  .nav-link-wrapper a {
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
-  }
-
-  .nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
-  }
-  
-  .nav-link-wrapper a:hover {
-    color: black;
-    
-    
-  }
+  justify-content: space-between;
+  padding: 38px 45px 38px 45px;
+}
+.nav-wrapper > .left-side > div {
+  float: left;
+  margin-right: 20px; /*adjust the spacing of 20px between home and majors*/
+  text-transform: uppercase; /*convert text to uppercase*/
+  font-size: 0.9rem; /*font size*/
+}
+.nav-wrapper > .right-side > div {
+  float: right;
+  margin-left: 20px; /*adjust the spacing of 20px between signIn and logIn*/
+  text-transform: uppercase; /*convert text to uppercase*/
+  font-size: 0.9rem; /*font size*/
+}
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  /*transition: border-bottom 0.5s;*/
+}
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+.active-nav-link a {
+  color: black !important;
+}
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-link-wrapper:hover { /*it gets darker when you hover you mouse under home,careers,etc*/
+  border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover {
+  color: black;
+}
   /* NAV BAR */
 
 
