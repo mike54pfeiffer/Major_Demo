@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta cahrset='UTF-8'>
+        <title>Major Demo</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="navBarStyle.css">    <!--makes sure to change "navBarStyle.css" into "style.css"-->
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+
+                <div class="left-side"> <!--home, majors, careers, interestTest, aboutUs, contactUs-->
+                    <div class="nav-link-wrapper active-nav-link"> <!--homme page-->
+                        <a href="index.html">Home</a> 
+                    </div>
+                    
+                    <div class="nav-link-wrapper"> <!--majors page-->
+                        <a href="majors.html">Majors</a>
+                    </div>
+                    
+                    <div  class="nav-link-wrapper"> <!--careers page-->
+                        <a href="careers.html">Careers</a>
+                    </div>
+                    
+                    <div class="nav-link-wrapper"> <!--interest test page-->
+                        <a href="interest test.html">Interest Test</a>
+                    </div>
+                    
+                    <div class="nav-link-wrapper"> <!--about us page-->
+                        <a href="about us.html">About Us</a>
+                    </div>
+                    
+                    <div class="nav-link-wrapper"> <!--contact us page-->
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="right-side"> <!--singIn and logIn-->
+                    <div class="nav-link-wrapper"> <!--sign in page-->
+                        <a href="signIn.html">Sign In</a>
+                    </div>
+                    
+                    <div class="nav-link-wrapper"> <!--log in page-->
+                        <a href="logIn.html">Log In</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="search">
+                <label for="personalityList">Myer-Briggs 16-Personality type:</label>
+
+                <select id="personalityList" name="personalityList">
+                    <!--Analysts (All N)-->
+                    <option value="INTJ">INTJ</option>
+                    <option value="INTP">INTP</option>
+                    <option value="ENTJ">ENTJ</option>
+                    <option value="ENTP">ENTP</option>
+                    
+                    <!--Diplomats (All F)-->
+                    <option value="INFJ">INFJ</option>
+                    <option value="INFP">INFP</option>
+                    <option value="ENFJ">ENFJ</option>
+                    <option value="ENFP">ENFP</option>
+                    
+                    <!--Sentinels (All J)-->
+                    <option value="ISTJ">ISTJ</option>
+                    <option value="ISFJ">ISFJ</option>
+                    <option value="ESTJ">ESTJ</option>
+                    <option value="ESFJ">ESFJ</option>
+                    
+                    <!--Explorers (All P)-->
+                    <option value="ISTP">ISTP</option>
+                    <option value="ISFP">ISFP</option>
+                    <option value="ESTP">ESTP</option>
+                    <option value="ESFP">ESFP</option>
+                </select>
+                <button onclick="myFunction()">Submit</button>
+            <p id="demo"></p>
+
+            <div id = "INTJ_DIV">
+                <p2>INTJ:</p2>
+                <ul id = "INTJ_List">
+                    <li>Architecture</li>
+                    <li>Art</li>
+                    <li>Biology</li>
+                    <li>Business Administration</li>
+                    <li>Chemistry</li>
+                    <li>Communication Studies</li>
+                    <li>Psychology</li>
+                    <li>Earth Science</li>
+                    <li>Journalism</li>
+                    <li>Physics</li>
+                </ul>
+                <p2></p2>
+            </div>
+            
+            <div id = "INTP_DIV">
+                <p2>INTP:</p2>
+                <ul id = "INTP_List">
+                    <li>Anthropology</li>
+                    <li>Architecture</li>
+                    <li>Art</li>
+                    <li>Biochemistry</li>
+                    <li>Biology</li>
+                    <li>Medical Technology</li>
+                    <li>Pre-Law</li>
+                    <li>Philosophy</li>
+                    <li>Physics</li>
+                    <li>Sociology</li>
+                </ul>
+                <p2></p2>
+            </div>
+
+            <script>
+                //Only works for textboxes
+                function myFunction() {
+                  var x, text, list;
+                
+                  // Get the value of the input field with id="numb"
+                  x = document.getElementById("personalityList").value;
+                
+                  // If x is Not a Number or less than one or greater than 10
+                  //text = x + ":";
+                  //document.getElementById("demo").innerHTML = text;
+
+                  //Clear all DIVs
+                  document.getElementById("INTJ_DIV").style.display = "none"
+                  document.getElementById("INTP_DIV").style.display = "none"
+                  //Output the correct DIV
+                  if(x == "INTJ")
+                  {
+                    document.getElementById("INTJ_DIV").style.display = "block"
+                  }
+                  else if(x = "INTP")
+                  {
+                    document.getElementById("INTP_DIV").style.display = "block"
+                  }
+                }
+                </script>
+        </div>
+    </body>
+
+</html>
