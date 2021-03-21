@@ -1,0 +1,53 @@
+.nav-wrapper {
+  float: left;
+}
+
+.majors-content-wrapper {
+  /*grid-auto-columns: auto;
+  display: block;*/
+  justify-content: space-between;
+  padding: 38px 45px 38px 45px;
+}
+.majors-content-wrapper > .first-row > div {  
+  /*justify-content: center;
+  justify-content: space-between;*/
+  
+  margin-right: 20px; /*adjust the spacing of 20px between home and majors*/
+  font-size: 0.9rem; /*font size*/
+}
+.majors-content-wrapper > .second-row > div {
+  justify-content: center;
+  /*justify-content: space-between;*/
+  margin-left: 20px; /*adjust the spacing of 20px between signIn and logIn*/
+  font-size: 0.9rem; /*font size*/
+}
+  
+.first-row > .agriculture {
+  display: block;
+  float: left;
+}
+
+.first-row > .business {
+  display: block;
+  float: left;
+}
+
+.first-row > .engineering {
+  display: block;
+  float: left;
+}
+
+.second-row > .environmental {
+  display: block;
+  float: left;
+}
+
+.second-row > .lass {
+  display: block;
+  float: left;
+}
+
+.second-row > .science {
+  display: block;
+  float: left;
+}
