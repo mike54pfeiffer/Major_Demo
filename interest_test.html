@@ -5,52 +5,23 @@
         <meta cahrset='UTF-8'>
         <title>Major Demo</title>
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link rel="stylesheet" href="navBarStyle.css">    <!--makes sure to change "navBarStyle.css" into "style.css"-->
+
+        <!--Library to include nav-bar.html-->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
 
     <body>
-        <div class="container">
-            <div class="nav-wrapper">
+        <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
 
-                <div class="left-side"> <!--home, majors, careers, interestTest, aboutUs, contactUs-->
-                    <div class="nav-link-wrapper active-nav-link"> <!--homme page-->
-                        <a href="index.html">Home</a> 
-                    </div>
-                    
-                    <div class="nav-link-wrapper"> <!--majors page-->
-                        <a href="majors.html">Majors</a>
-                    </div>
-                    
-                    <div  class="nav-link-wrapper"> <!--careers page-->
-                        <a href="careers.html">Careers</a>
-                    </div>
-                    
-                    <div class="nav-link-wrapper"> <!--interest test page-->
-                        <a href="interest test.html">Interest Test</a>
-                    </div>
-                    
-                    <div class="nav-link-wrapper"> <!--about us page-->
-                        <a href="about us.html">About Us</a>
-                    </div>
-                    
-                    <div class="nav-link-wrapper"> <!--contact us page-->
-                        <a href="contact.html">Contact Us</a>
-                    </div>
-                </div>
+        <!--js Library Call to include our nav-bar-->
+        <script>
+            $(function(){
+            $("#nav-placeholder").load("nav_bar.html");
+            });
+        </script>
 
-                <div class="right-side"> <!--singIn and logIn-->
-                    <div class="nav-link-wrapper"> <!--sign in page-->
-                        <a href="signIn.html">Sign In</a>
-                    </div>
-                    
-                    <div class="nav-link-wrapper"> <!--log in page-->
-                        <a href="logIn.html">Log In</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+        <!--16 Personality Type Input-->
         <div class="search">
             <p2>Haven't taken the Myer-Briggs Personality test? You can do so here: <a href = "https://www.16personalities.com/">Myer-Briggs 16 Personnality Test</a></p2>
             <br></br>
