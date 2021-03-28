@@ -1,34 +1,33 @@
 
 /* Master Stlyes */
 body{
-    margin: 0px;
-    background-color: rgb(191, 194, 199);
-    /* orignal has 8px, we remove it and put it to 0 */
-
+  margin: 0px;
+  background-color: rgb(191, 194, 199);
+  /* orignal has 8px, we remove it and put it to 0 */
 }
 
 .content-wrapper{
     margin:0px;
 }
+
 /* Portfolio styles */
 .portfolio-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    height:250px;
-    width:250px;
-    /* set the space between each box */
-    /* Making the content smaller into the box */
-    padding-left:110px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  height:250px;
+  width:250px;
+  /* set the space between each box */
+  /* Making the content smaller into the box */
+  padding-left:110px;
+}
 
- 
-
-  }
 .item-wrapper{
   width: 250px;
   height: 250x;
   padding:0px;
 }
+
 .item-wrapper:hover{
   transform:scale(1.1);
   transition: transform 1s;
@@ -39,77 +38,79 @@ body{
  
 
 img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
-    /* set the sizd of the images in grid boxes */
-    object-fit: cover;
-    /* Make the image fit in the grid boxes */
-    border-radius: 30px;
-    /* set round corner of images */
-    padding-left: 0px;
-   
-  }
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  /* set the sizd of the images in grid boxes */
+  object-fit: cover;
+  /* Make the image fit in the grid boxes */
+  border-radius: 30px;
+  /* set round corner of images */
+  padding-left: 0px;
+
+}
 
   
-  .subtitle{
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 20px;
-  }
-  a:link{
-    text-decoration: none;
-  }
+.subtitle{
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+a:link{
+  text-decoration: none;
+}
 
 
 
 /* NAV BAR */
-container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-.nav-wrapper {
-  justify-content: space-between;
-  padding: 38px 45px 38px 45px;
-}
-.nav-wrapper > .left-side > div {
-  float: left;
-  margin-right: 20px; /*adjust the spacing of 20px between home and majors*/
-  text-transform: uppercase; /*convert text to uppercase*/
-  font-size: 0.9rem; /*font size*/
-}
-.nav-wrapper > .right-side > div {
-  float: right;
-  margin-left: 20px; /*adjust the spacing of 20px between signIn and logIn*/
-  text-transform: uppercase; /*convert text to uppercase*/
-  font-size: 0.9rem; /*font size*/
-}
-.nav-link-wrapper {
-  height: 22px;
-  border-bottom: 1px solid transparent;
-  /*transition: border-bottom 0.5s;*/
-}
-.active-nav-link {
-  border-bottom: 1px solid black;
-}
-.active-nav-link a {
-  color: black !important;
-}
-.nav-link-wrapper a {
-  color: #8a8a8a;
-  text-decoration: none;
-  transition: color 0.5s;
-}
-.nav-link-wrapper:hover { /*it gets darker when you hover you mouse under home,careers,etc*/
-  border-bottom: 1px solid black;
-}
-.nav-link-wrapper a:hover {
-  color: black;
-}
-  /* NAV BAR */
+  .nav-wrapper { 
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    justify-content: space-between;
+    padding: 38px 45px 38px 45px;
+  }
+  container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .nav-wrapper > .left-side > div {
+    float: left;
+    margin-right: 20px; /*adjust the spacing of 20px between home and majors*/
+    text-transform: uppercase; /*convert text to uppercase*/
+    font-size: 0.9rem; /*font size*/
+  }
+  .nav-wrapper > .right-side > div {
+    float: right;
+    margin-left: 20px; /*adjust the spacing of 20px between signIn and logIn*/
+    text-transform: uppercase; /*convert text to uppercase*/
+    font-size: 0.9rem; /*font size*/
+  }
+  .nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    /*transition: border-bottom 0.5s;*/
+  }
+  .active-nav-link {
+    border-bottom: 1px solid black;
+  }
+  .active-nav-link a {
+    color: black !important;
+  }
+  .nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  .nav-link-wrapper:hover { /*it gets darker when you hover you mouse under home,careers,etc*/
+    border-bottom: 1px solid black;
+  }
+  .nav-link-wrapper a:hover {
+    color: black;
+  }
+/* NAV BAR */
 
 
-  /* Footer */
+/* Footer */
   .footer{
     text-align: center;
     color: black;
@@ -117,11 +118,12 @@ container {
     font-weight:normal;
     padding-top:1800px;
     padding-bottom: 20px;
-}
+  }
+/* Footer */
 
 
 /* Title in Major demo site */
-.courseHeading{
+  .courseHeading{
     text-align: center;
     color: rgb(199, 81, 81);;
     font-size: 30px;
@@ -138,3 +140,4 @@ container {
     font-size: 20px;
     padding-bottom: 10px;
   }
+/* Title in Major demo site */
