@@ -5,6 +5,7 @@
         <meta cahrset='UTF-8'>
         <title>Major Demo</title>
         <link rel="stylesheet" href="interestTest.css">
+        <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
         <!--Library provided from https://code.jquery.com/jquery-1.10.2.js to include nav-bar.html-->
@@ -12,15 +13,53 @@
     </head>
 
     <body>
+        
         <!--Navigation bar-->
-        <div id="nav-placeholder"></div>
+        <!--<div id="nav-placeholder"></div>-->
 
         <!--js Library Call to include our nav-bar-->
-        <script>
+        <!--<script>
             $(function(){
             $("#nav-placeholder").load("nav_bar.html");
             });
-        </script>
+        </script>-->
+        <div class="nav-wrapper"> <!-- nav bar: home, majors, careers, interestTest, aboutUs, contacUS, logIn, signIn -->
+            <div class="left-side"> <!--home, majors, careers, interestTest, aboutUs, contactUs-->
+                <div class="nav-link-wrapper"> <!--homme page-->
+                    <a href="index.html">Home</a> 
+                </div>
+                
+                <div class="nav-link-wrapper"> <!--majors page-->
+                    <a href="majors.html">Majors</a>
+                </div>
+                
+                <!-- <div  class="nav-link-wrapper"> //careers page
+                    <a href="careers.html">Careers</a>
+                </div> -->
+                
+                <div class="nav-link-wrapper active-nav-link"> <!--interest test page-->
+                    <a href="interest_test.html">Interest Test</a>
+                </div>
+                
+                <div class="nav-link-wrapper"> <!--about us page-->
+                    <a href="about_us.html">About Us</a>
+                </div>
+                
+                <!-- <div class="nav-link-wrapper"> //contact us page
+                    <a href="contact.html">Contact Us</a>
+                </div> -->
+            </div> <!-- LEFT-SIDE -->
+
+            <div class="right-side"> <!--singIn and logIn-->
+                <div class="nav-link-wrapper"> <!--sign in page-->
+                    <a href="signIn.html">Sign In</a>
+                </div>
+                
+                <div class="nav-link-wrapper"> <!--log in page-->
+                    <a href="logIn.html">Log In</a>
+                </div>
+            </div> <!-- RIGHT-SIDE -->
+        </div> <!-- NAV-WRAPPER -->
 
         <!--16 Personality Type Input-->
         <div class="search">
