@@ -1,22 +1,17 @@
-/* Master Stlyes */
-body{
+/* BODY */
+body {
   margin: 0px;
   font-family: "Lato", sans-serif;
-  background-color:rgb(209, 201, 201);
-  /* orignal has 8px, we remove it and put it to 0 */
+  background-color:rgb(209, 201, 201); /* orignal has 8px, we remove it and put it to 0 */
 }
 
-
-/* Portfolio styles */
-  .portfolio-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    /* set the space between each box */
-    padding:40px;
-    /* Making the content smaller into the box */
-  }
-/* Portfolio styles */
+/* PORTFOLIO */
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px; /* set the space between each box */
+  padding:40px; /* making the content smaller into the box */
+}
 
 
 .item-wrapper{
@@ -26,7 +21,7 @@ body{
 }
 
 
-/* When mouse hovers over any item-wrapper (csci, psychology, math, business, physics, graphic desidn) */
+/* When mouse hovers over any item-wrapper (csci, psychology, math, business, physics, graphic design) */
 .item-wrapper:hover{
   transform:scale(1.2);
   transition: transform 1s;
@@ -37,12 +32,9 @@ body{
 img {
   object-fit: cover;
   width: 100%;
-  max-height: 100%;
-  /* set the size of the images in grid boxes */
-  object-fit: cover;
-  /* Make the image fit in the grid boxes */
-  border-radius: 30px;
-  /* set round corner of images */
+  max-height: 100%; /* set the size of the images in grid boxes */
+  object-fit: cover; /* Make the image fit in the grid boxes */
+  border-radius: 30px; /* set round corner of images */
 }
 
 
@@ -58,58 +50,55 @@ a:link{
 
 
 /* NAV BAR */
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .nav-wrapper {
-    justify-content: space-between;
-    padding: 38px 45px 38px 45px;
-  }
-  .nav-wrapper > .left-side > div {
-    float: left;
-    margin-right: 20px; /*adjust the spacing of 20px between home and majors*/
-    text-transform: uppercase; /*convert text to uppercase*/
-    font-size: 0.9rem; /*font size*/
-  }
-  .nav-wrapper > .right-side > div {
-    float: right;
-    margin-left: 20px; /*adjust the spacing of 20px between signIn and logIn*/
-    text-transform: uppercase; /*convert text to uppercase*/
-    font-size: 0.9rem; /*font size*/
-  }
-  .nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-  }
-  .active-nav-link {
-    border-bottom: 1px solid black;
-  }
-  .active-nav-link a {
-    color: black !important;
-  }
-  .nav-link-wrapper a {
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
-  }
-  .nav-link-wrapper:hover { /*it gets darker when you hover you mouse under home,careers,etc*/
-    border-bottom: 1px solid black;
-  }
-  .nav-link-wrapper a:hover {
-    color: black;
-  }
-/* NAV BAR */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.nav-wrapper {
+  justify-content: space-between;
+  padding: 38px 45px 38px 45px;
+}
+.nav-wrapper > .left-side > div {
+  float: left;
+  margin-right: 20px; /*adjust the spacing of 20px between home and majors*/
+  text-transform: uppercase; /*convert text to uppercase*/
+  font-size: 0.9rem; /*font size*/
+}
+.nav-wrapper > .right-side > div {
+  float: right;
+  margin-left: 20px; /*adjust the spacing of 20px between signIn and logIn*/
+  text-transform: uppercase; /*convert text to uppercase*/
+  font-size: 0.9rem; /*font size*/
+}
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+.active-nav-link a {
+  color: black !important;
+}
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-link-wrapper:hover { /*it gets darker when you hover you mouse under home,careers,etc*/
+  border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover {
+  color: black;
+}
 
-
-/* Footer */
-  .footer{
-    text-align: center;
-    color: black;
-    font-size: 16px;
-    font-weight:normal;
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
-/* Footer */
+/* FOOTER */
+.footer{
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  font-weight:normal;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}

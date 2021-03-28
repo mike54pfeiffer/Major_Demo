@@ -35,7 +35,6 @@ body{
   
 }
 
- 
 
 img {
   object-fit: cover;
@@ -61,83 +60,77 @@ a:link{
 }
 
 
-
 /* NAV BAR */
-  .nav-wrapper { 
-    margin: 0px;
-    font-family: "Lato", sans-serif;
-    justify-content: space-between;
-    padding: 38px 45px 38px 45px;
-  }
-  container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .nav-wrapper > .left-side > div {
-    float: left;
-    margin-right: 20px; /*adjust the spacing of 20px between home and majors*/
-    text-transform: uppercase; /*convert text to uppercase*/
-    font-size: 0.9rem; /*font size*/
-  }
-  .nav-wrapper > .right-side > div {
-    float: right;
-    margin-left: 20px; /*adjust the spacing of 20px between signIn and logIn*/
-    text-transform: uppercase; /*convert text to uppercase*/
-    font-size: 0.9rem; /*font size*/
-  }
-  .nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    /*transition: border-bottom 0.5s;*/
-  }
-  .active-nav-link {
-    border-bottom: 1px solid black;
-  }
-  .active-nav-link a {
-    color: black !important;
-  }
-  .nav-link-wrapper a {
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
-  }
-  .nav-link-wrapper:hover { /*it gets darker when you hover you mouse under home,careers,etc*/
-    border-bottom: 1px solid black;
-  }
-  .nav-link-wrapper a:hover {
-    color: black;
-  }
-/* NAV BAR */
-
+.nav-wrapper { 
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+  justify-content: space-between;
+  padding: 38px 45px 38px 45px;
+}
+container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.nav-wrapper > .left-side > div {
+  float: left;
+  margin-right: 20px; /*adjust the spacing of 20px between home and majors*/
+  text-transform: uppercase; /*convert text to uppercase*/
+  font-size: 0.9rem; /*font size*/
+}
+.nav-wrapper > .right-side > div {
+  float: right;
+  margin-left: 20px; /*adjust the spacing of 20px between signIn and logIn*/
+  text-transform: uppercase; /*convert text to uppercase*/
+  font-size: 0.9rem; /*font size*/
+}
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  /*transition: border-bottom 0.5s;*/
+}
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+.active-nav-link a {
+  color: black !important;
+}
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-link-wrapper:hover { /*it gets darker when you hover you mouse under home,careers,etc*/
+  border-bottom: 1px solid black;
+}
+.nav-link-wrapper a:hover {
+  color: black;
+}
 
 /* Footer */
-  .footer{
-    text-align: center;
-    color: black;
-    font-size: 16px;
-    font-weight:normal;
-    padding-top:1800px;
-    padding-bottom: 20px;
-  }
-/* Footer */
-
+.footer{
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  font-weight:normal;
+  padding-top:1800px;
+  padding-bottom: 20px;
+}
 
 /* Title in Major demo site */
-  .courseHeading{
-    text-align: center;
-    color: rgb(199, 81, 81);;
-    font-size: 30px;
-    margin:0;
-  }
-  .commonCourse{
-    color: rgb(199, 81, 81);;
-    font-size: 20px;
-    padding-left: 115px;
-    padding-bottom: 10px;
-  }
-  .courseSeperate{
-    color: rgb(199, 81, 81);;
-    font-size: 20px;
-    padding-bottom: 10px;
-  }
-/* Title in Major demo site */
+.courseHeading{
+  text-align: center;
+  color: rgb(199, 81, 81);;
+  font-size: 30px;
+  margin:0;
+}
+.commonCourse{
+  color: rgb(199, 81, 81);;
+  font-size: 20px;
+  padding-left: 115px;
+  padding-bottom: 10px;
+}
+.courseSeperate{
+  color: rgb(199, 81, 81);;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
