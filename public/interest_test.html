@@ -4,6 +4,7 @@
     <head>
         <meta cahrset='UTF-8'>
         <title>Major Demo</title>
+        <link rel="stylesheet" href="interestTest.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
         <!--Library provided from https://code.jquery.com/jquery-1.10.2.js to include nav-bar.html-->
@@ -23,135 +24,1881 @@
 
         <!--16 Personality Type Input-->
         <div class="search">
-            <p2>Haven't taken the Myer-Briggs Personality test? You can do so here: <a href = "https://www.16personalities.com/">Myer-Briggs 16 Personnality Test</a></p2>
-            <br></br>
-                <label for="personalityList">Myer-Briggs 16-Personality type:</label>
+            <div id = "dropbox">
+                <p2>Haven't taken the Myer-Briggs Personality test? You can do so here: <a href = "https://www.16personalities.com/">Myer-Briggs 16 Personnality Test</a></p2>
+                <br></br>
+                <div id = "dropdown">
+                    <label for="personalityList">Myer-Briggs 16-Personality type:</label>
 
-                <select id="personalityList" name="personalityList">
-                    <option value="NULL">--16 Personality Type--</option>
+                    <select id="personalityOptions" name="personalityList">
+                        <!--Default Value-->
+                        <option value="NULL">--16 Personality Type--</option>
 
-                    <!--Alphibetical listing-->
-                    <option value="ENFJ">ENFJ</option>
-                    <option value="ENFP">ENFP</option>
-                    <option value="ENTJ">ENTJ</option>
-                    <option value="ENTP">ENTP</option>
-                    <option value="ESFJ">ESFJ</option>
-                    <option value="ESFP">ESFP</option>
-                    <option value="ESTJ">ESTJ</option>
-                    <option value="ESTP">ESTP</option>
-                    <option value="INFJ">INFJ</option>
-                    <option value="INFP">INFP</option>
-                    <option value="INTJ">INTJ</option>
-                    <option value="INTP">INTP</option>
-                    <option value="ISFJ">ISFJ</option>
-                    <option value="ISFP">ISFP</option>
-                    <option value="ISTJ">ISTJ</option>
-                    <option value="ISTP">ISTP</option>
-                    
-                </select>
-                <button onclick="myFunction()">Submit</button>
-            <br></br>
+                        <!--Alphibetical listing-->
+                        <option value="ENFJ">ENFJ</option>
+                        <option value="ENFP">ENFP</option>
+                        <option value="ENTJ">ENTJ</option>
+                        <option value="ENTP">ENTP</option>
+                        <option value="ESFJ">ESFJ</option>
+                        <option value="ESFP">ESFP</option>
+                        <option value="ESTJ">ESTJ</option>
+                        <option value="ESTP">ESTP</option>
+                        <option value="INFJ">INFJ</option>
+                        <option value="INFP">INFP</option>
+                        <option value="INTJ">INTJ</option>
+                        <option value="INTP">INTP</option>
+                        <option value="ISFJ">ISFJ</option>
+                        <option value="ISFP">ISFP</option>
+                        <option value="ISTJ">ISTJ</option>
+                        <option value="ISTP">ISTP</option>
+                    </select>
 
-            <!--Analysts (All N)-->
-            <!--INTJ-->
-            <div id = "INTJ_DIV">
-                <p2>INTJ:</p2>
-                <ul id = "INTJ_List">
-                    <li>Architecture</li>
-                    <li>Art</li>
-                    <li>Biology</li>
-                    <li>Business Administration</li>
-                    <li>Chemistry</li>
-                    <li>Communication Studies</li>
-                    <li>Psychology</li>
-                    <li>Earth Science</li>
-                    <li>Journalism</li>
-                    <li>Physics</li>
-                </ul>
+                    <button onclick="showPersonality()">Submit</button>
+                </div>
                 <br></br>
             </div>
-            <!--INTP-->
-            <div id = "INTP_DIV">
-                <p2>INTP:</p2>
-                <ul id = "INTP_List">
-                    <li>Anthropology</li>
-                    <li>Architecture</li>
-                    <li>Art</li>
-                    <li>Biochemistry</li>
-                    <li>Biology</li>
-                    <li>Medical Technology</li>
-                    <li>Pre-Law</li>
-                    <li>Philosophy</li>
-                    <li>Physics</li>
-                    <li>Sociology</li>
-                </ul>
+        </div>
+
+        <div class = "personalityMajors">
+            <!--ENFJ-->
+            <div id = "ENFJ_DIV">
+                <div class = "PersonalityName">
+                    <p2>ENFJ:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "ENFJ_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Advertising</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Business Administration</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Communication Studies</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Counseling Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Criminology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Education</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">English</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Family Studies</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Health Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Human Resource Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Journalism</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Marketing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Music</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Political Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Public Relations</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Sociology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Telecommunications</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Theater</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Urban Planning and Development</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <br></br>
             </div>
+
+            <!--ENFP-->
+            <div id = "ENFP_DIV">
+                <div class = "PersonalityName">
+                    <p2>ENFP:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "ENFP_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Advertising</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Business Administration</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Chemistry</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Computer Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Counseling Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Criminology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Education (Elementary or Secondary)</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">English</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Exercise Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Interior Design</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Journalism</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Marketing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Medical Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Political Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Public Relations</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Risk Management and Insurance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Sociology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Telecommunications</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Theater</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Urban Planning</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
             <!--ENTJ-->
             <div id = "ENTJ_DIV">
-                <p2>ENTJ:</p2>
-                <ul id = "ENTJ_List">
-                    <li>Accounting</li>
-                    <li>Advertising</li>
-                    <li>Anthropology</li>
-                    <li>Architecture</li>
-                    <li>Art</li>
-                    <li>Biology</li>
-                    <li>Chemistry</li>
-                    <li>Hospitality Management</li>
-                    <li>Journalism</li>
-                    <li>Political Science</li>
-                    <li>Pre-Dental</li>
-                    <li>Pre-Law</li>
-                    <li>Pre-Medical</li>
-                    <li>Psychology</li>
-                    <li>Sociology</li>
-                </ul>
+                <div class = "PersonalityName">
+                    <p2>ENTJ:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "ENTJ_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Accounting</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Advertising</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Anthropology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Architecture</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Chemistry</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Hospitality Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Journalism</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Political Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Dental</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Medical</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Sociology</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <br></br>
             </div>
+
             <!--ENTP-->
+            <div id = "ENTP_DIV">
+                <div class = "PersonalityName">
+                    <p2>ENTP:</p2>
+                </div>
+                
+                <div class = "majorList">
+                    <ul id = "ENTP_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Accounting</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Architecture</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Business Administration</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Computer Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Computer Information Systems</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Criminology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Earth Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Space Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Education</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">English</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Geology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Health Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Journalism</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Medical Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Nursing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Dental</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Medical</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Risk Management and Insurance</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
             
-            <!--Diplomats (All F)-->
-            <!--INFJ-->
-            <!--INFP-->
-            <!--ENFJ-->
-            <!--ENFP-->
-            
-            <!--Sentinels (All J)-->
-            <!--ISTJ-->
-            <!--ISFJ-->
-            <!--ESTJ-->
             <!--ESFJ-->
-            
-            <!--Explorers (All P)-->
-            <!--ISTP-->
-            <!--ISFP-->
-            <!--ESTP-->
+            <div id = "ESFJ_DIV">
+                <div class = "PersonalityName">
+                    <p2>ESFJ:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "ESFJ_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Accounting</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Business Administration</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Chemistry</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Counseling Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Criminology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Education</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Exercise Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Family Studies</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Finance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Hospitality Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Marketing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Medical Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Nursing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Physical Education</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Dental</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Medical</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Public Relations</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Risk Management and Insurance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Theater</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
             <!--ESFP-->
+            <div id = "ESFP_DIV">
+                <div class = "PersonalityName">
+                    <p2>ESFP:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "ESFP_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Child Life Specialist</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Counseling Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Criminology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Dance Performance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Education</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Exercise Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Family Studies</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Geology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Health Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Hospitality Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Human Resource Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Interior Design</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Landscape Architecture</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Music</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Nursing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Physical Education</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Dental</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Medical</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Public Relations</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Risk Management and Insurance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Sociology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Theater</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
+            <!--ESTJ-->
+            <div id = "ESTJ_DIV">
+                <div class = "PersonalityName">
+                    <p2>ESTJ:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "ESTJ_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Accounting</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Actuarial Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Business Administration</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Construction Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Criminology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Finance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Food Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Hospitality Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Mechanical Engineering Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Music Media Production and Industry</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Political Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Dental</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Medical</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Public Relations</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Risk Management and Insurance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Social Work</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
+            <!--ESTP-->
+            <div id = "ESTP_DIV">
+                <div class = "PersonalityName">
+                    <p2>ESTP:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "ESTP_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Computer Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Computer Information Systems</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Criminology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Dance Performance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Food Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Journalism</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Marketing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Mechanical Engineering Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Music</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Medical</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Risk Management and Insurance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Telecommunications</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Theater</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
+            <!--INFJ-->
+            <div id = "INFJ_DIV">
+                <div class = "PersonalityName">
+                    <p2>INFJ:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "INFJ_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Advertising</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Architecture</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Communication Studies</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Dance Performance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Education</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">English</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Exercise Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">History</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Interior Design</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Journalism</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Marketing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Medical Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Nursing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Dental</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Medical</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Public Relations</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Sociology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Telecommunications</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Theater</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Urban Planning</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
+            <!--INFP-->
+            <div id = "INFP_DIV">
+                <div class = "PersonalityName">
+                    <p2>INFP:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "INFP_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Architecture</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Business Administration</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Counseling Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Education</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">English</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Family Studies</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">History</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Human Resource Management</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Interior Design</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Journalism</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Medical Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Music</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Nursing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Philosophy</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Social Work</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Sociology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Theater</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
+            <!--INTJ-->
+            <div id = "INTJ_DIV">
+                <div class = "PersonalityName">
+                    <p2>INTJ:</p2>
+                </div>
+                
+                <div class = "majorList">
+                    <ul id = "INTJ_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Architecture</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Business Administration</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Chemistry</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Communication Studies</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Earth Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Journalism</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Physics</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
+            <!--INTP-->
+            <div id = "INTP_DIV">
+                <div class = "PersonalityName">
+                    <p2>INTP:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "INTP_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Anthropology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Architecture</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biochemistry</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Medical Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Philosophy</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Physics</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Sociology</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
+            <!--ISFJ-->
+            <div id = "ISFJ_DIV">
+                <div class = "PersonalityName">
+                    <p2>ISFJ:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "ISFJ_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Anthropology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Architecture</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biochemistry</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Business Administration</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Chemistry</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Communication Studies</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Computer Information Systems</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Counseling Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Criminology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Dance Performance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Economics</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Finance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">History</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Interior Design</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Medical Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Music</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Nursing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Dental</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Medical</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Psychology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Social Work</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
+            <!--ISFP-->
+            <div id = "ISFP_DIV">
+                <div class = "PersonalityName">
+                    <p2>ISFP:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "ISFP_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Computer Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Criminology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Education</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Exercise Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Geology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Health Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">History</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Interior Design</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Medical Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Music Media Production and Industry</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Nursing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Physical Education</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Dental</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Medical</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Public Relations</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Risk Management and Insurance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Social Work</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
+            <!--ISTJ-->
+            <div id = "ISTJ_DIV">
+                <div class = "PersonalityName">
+                    <p2>ISTJ:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "ISTJ_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Accounting</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Architecture</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Business Administration</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Computer Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Computer Information Systems</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Criminology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Earth Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Education</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">English</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Finance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Geology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Health Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Industrial Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Journalism</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Medical Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Nursing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Dental</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Medical</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Risk Management and Insurance</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
+
+            <!--ISTP-->
+            <div id = "ISTP_DIV">
+                <div class = "PersonalityName">
+                    <p2>ISTP:</p2>
+                </div>
+
+                <div class = "majorList">
+                    <ul id = "ISTP_List">
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Art</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Biology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Business Administration</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Computer Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Computer Information Systems</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Criminology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Exercise Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Finance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Geology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Health Science</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Industrial Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Landscape Architecture</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Manufacturing Engineering Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Mechanical Engineering Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Mathematical Sciences</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Medical Technology</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Dental</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Law</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Pre-Medical</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Risk Management and Insurance</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Telecommunications</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-link-wrapper"> 
+                                <a href="">Theater</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <br></br>
+            </div>
 
             <script>
-                //Only works for textboxes
-                function myFunction() {
+                //Call on submit button click
+                function showPersonality() {
                   var x, text, list;
                 
                   // Get the value of the input field with id="numb"
-                  x = document.getElementById("personalityList").value;
-                
-                  // If x is Not a Number or less than one or greater than 10
-                  //text = x + ":";
-                  //document.getElementById("demo").innerHTML = text;
+                  x = document.getElementById("personalityOptions").value;
 
                   //Clear all DIVs
+                  document.getElementById("ENFJ_DIV").style.display = "none"
+                  document.getElementById("ENFP_DIV").style.display = "none"
+                  document.getElementById("ENTJ_DIV").style.display = "none"
+                  document.getElementById("ENTP_DIV").style.display = "none"
+                  document.getElementById("ESFJ_DIV").style.display = "none"
+                  document.getElementById("ESFP_DIV").style.display = "none"
+                  document.getElementById("ESTJ_DIV").style.display = "none"
+                  document.getElementById("ESTP_DIV").style.display = "none"
+                  document.getElementById("INFJ_DIV").style.display = "none"
+                  document.getElementById("INFP_DIV").style.display = "none"
                   document.getElementById("INTJ_DIV").style.display = "none"
                   document.getElementById("INTP_DIV").style.display = "none"
+                  document.getElementById("ISFJ_DIV").style.display = "none"
+                  document.getElementById("ISFP_DIV").style.display = "none"
+                  document.getElementById("ISTJ_DIV").style.display = "none"
+                  document.getElementById("ISTP_DIV").style.display = "none"
+                  
+                  
                   //Output the correct DIV
-                  if(x == "INTJ")
+                  if(x == "ENFJ")
                   {
-                    document.getElementById("INTJ_DIV").style.display = "block"
+                    document.getElementById("ENFJ_DIV").style.display = "block"
                   }
-                  else if(x = "INTP")
+                  else if(x == "ENFP")
                   {
-                    document.getElementById("INTP_DIV").style.display = "block"
+                      document.getElementById("ENFP_DIV").style.display = "block"
+                  }
+                  else if(x == "ENTJ")
+                  {
+                      document.getElementById("ENTJ_DIV").style.display = "block"
+                  }
+                  else if(x == "ENTP")
+                  {
+                      document.getElementById("ENTP_DIV").style.display = "block"
+                  }
+                  else if(x == "ESFJ")
+                  {
+                      document.getElementById("ESFJ_DIV").style.display = "block"
+                  }
+                  else if(x == "ESFP")
+                  {
+                      document.getElementById("ESFP_DIV").style.display = "block"
+                  }
+                  else if(x == "ESTJ")
+                  {
+                      document.getElementById("ESTJ_DIV").style.display = "block"
+                  }
+                  else if(x == "ESTP")
+                  {
+                      document.getElementById("ESTP_DIV").style.display = "block"
+                  }
+                  else if(x == "INFJ")
+                  {
+                      document.getElementById("INFJ_DIV").style.display = "block"
+                  }
+                  else if(x == "INFP")
+                  {
+                      document.getElementById("INFP_DIV").style.display = "block"
+                  }
+                  else if(x == "INTJ")
+                  {
+                      document.getElementById("INTJ_DIV").style.display = "block"
+                  }
+                  else if(x == "INTP")
+                  {
+                      document.getElementById("INTP_DIV").style.display = "block"
+                  }
+                  else if(x == "ISFJ")
+                  {
+                      document.getElementById("ISFJ_DIV").style.display = "block"
+                  }
+                  else if(x == "ISFP")
+                  {
+                      document.getElementById("ISFP_DIV").style.display = "block"
+                  }
+                  else if(x == "ISTJ")
+                  {
+                      document.getElementById("ISTJ_DIV").style.display = "block"
+                  }
+                  else if(x == "ISTP")
+                  {
+                      document.getElementById("ISTP_DIV").style.display = "block"
                   }
                 }
                 </script>
