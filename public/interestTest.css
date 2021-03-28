@@ -13,6 +13,7 @@ body{
 
 #dropbox
 {
+    padding-top: 25px;
     text-align: center;
     background-color: #c2b1b4;
 }
@@ -49,8 +50,7 @@ button:hover
 
 .personalityMajors
 {
-    display: grid;
-    
+    display: grid;   
 }
 
 .PersonalityName
