@@ -1,3 +1,5 @@
+/*INCLUDE THIS FILE TO USE NAV-BAR CODE ON EACH PAGE*/
+
 /*!
  * jQuery JavaScript Library v1.10.2
  * http://jquery.com/
