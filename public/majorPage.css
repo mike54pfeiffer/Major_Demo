@@ -112,7 +112,7 @@ container {
   color: black;
   font-size: 16px;
   font-weight:normal;
-  padding-top:1800px;
+  padding-top:3350px;
   padding-bottom: 20px;
 }
 
@@ -133,4 +133,14 @@ container {
   color: rgb(199, 81, 81);;
   font-size: 20px;
   padding-bottom: 10px;
+}
+/* INTEREST TITLE */
+h3{
+  margin:0px; /* Make margin 0px for interest field */
+}
+
+h4{
+  margin:0px;
+  padding-top:8px;
+  color:teal;
 }
