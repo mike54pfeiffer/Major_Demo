@@ -80,12 +80,13 @@ font-family: "Lato", sans-serif;
 
 /* MAJOR ROWS */
 .first-row{
-padding-left:35px; 
+padding-left:100px;
+padding-right: 100px; 
 }
 .first-row > .science {
 display: block;
 float: left;
-padding-right:10px;
+padding-right:100px;
 }
 .first-row > .art {
 display: block;
@@ -95,20 +96,23 @@ padding-right:10px;
 .first-row > .humanities {
 display: block;
 float: left; 
-padding-right:10px;
+padding-left:100px;
 }
 .second-row{
-  padding-left:35px; 
+  padding-left:100px; 
   }
 .second-row > .social-science{
 display:block;
 float:left;
 padding-right:10px;
+padding-top: 35px;
 }
 .second-row > .eng-tech{
 display:block;
 float:left;
 padding-bottom: 100px;
+padding-top: 35px;
+padding-left: 100px;
 }
 
 /* Footer */
