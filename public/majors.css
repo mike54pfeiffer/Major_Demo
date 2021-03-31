@@ -10,20 +10,19 @@ body {
 }
 .nav-wrapper > .left-side > div {
   float: left;
-  margin-right: 20px; /*adjust the spacing of 20px between home and majors*/
-  text-transform: uppercase; /*convert text to uppercase*/
-  font-size: 0.9rem; /*font size*/
+  margin-right: 20px; /* adjust the spacing of 20px between home and majors */
+  text-transform: uppercase; /* convert text to uppercase */
+  font-size: 0.9rem; /* font size */
 }
 .nav-wrapper > .right-side > div {
   float: right;
-  margin-left: 20px; /*adjust the spacing of 20px between signIn and logIn*/
-  text-transform: uppercase; /*convert text to uppercase*/
-  font-size: 0.9rem; /*font size*/
+  margin-left: 20px; /* adjust the spacing of 20px between signIn and logIn */
+  text-transform: uppercase; /* convert text to uppercase */
+  font-size: 0.9rem; /* font size */
 }
 .nav-link-wrapper {
   height: 20px;
   border-bottom: 1px solid transparent;
-  /*transition: border-bottom 0.5s;*/
 }
 .active-nav-link {
   border-bottom: 1px solid black;
@@ -34,32 +33,31 @@ body {
 .nav-link-wrapper a {
   color: #8a8a8a;
   text-decoration: none;
-  transition: color 0.5s;
+  transition: color 0.3s;
 }
-.nav-link-wrapper:hover { /*it gets darker when you hover you mouse under home,careers,etc*/
+.nav-link-wrapper:hover { /* it gets darker when you hover you mouse under home,careers,etc */
   border-bottom: 1px solid black;
 }
 .nav-link-wrapper a:hover {
   color: black;
 }
-/* NAV BAR */
 
 /* MAJOR-NAV-LINK-WRAPPER */
 .major-nav-link-wrapper {
   border-bottom: 1px solid transparent;
   padding-top: 5px;
+  padding-left: 5px;
 }
 .major-nav-link-wrapper a {
   color: #8a8a8a;
   text-decoration: none;
   transition: color 0.5s;
 }
-
 .major-nav-link-wrapper a:hover {
   color: black;
 }
-/* MAJOR-NAV-LINK-WRAPPER */
 
+/* MAJOR CONTENT */
 .majors-content-wrapper {  
 display: block;
 padding: 20px;
@@ -71,6 +69,7 @@ padding: 10px;
 font-size: 0.9rem; 
 }
 
+/* MAJOR TITLE */
 .major-title{
 border: 1px solid black;
 font-size:25px;
@@ -79,20 +78,15 @@ text-align: center;
 font-family: "Lato", sans-serif;
 }
 
-/* Major Columns */
+/* MAJOR ROWS */
 .first-row{
 padding-left:35px; 
 }
-.second-row{
-padding-left:35px; 
-}
-
 .first-row > .science {
 display: block;
 float: left;
 padding-right:10px;
 }
-
 .first-row > .art {
 display: block;
 float: left;
@@ -103,13 +97,14 @@ display: block;
 float: left; 
 padding-right:10px;
 }
-
+.second-row{
+  padding-left:35px; 
+  }
 .second-row > .social-science{
 display:block;
 float:left;
 padding-right:10px;
 }
-
 .second-row > .eng-tech{
 display:block;
 float:left;
@@ -122,4 +117,3 @@ text-align: center;
 height:200px;
 width:200px;
 }
-

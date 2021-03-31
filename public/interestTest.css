@@ -1,9 +1,8 @@
 /* Master Stlyes */
-body{
+body {
     margin: 0px;
     background-color: rgb(209, 201, 201);
     /* orignal has 8px, we remove it and put it to 0 */
-
 }
 
 .search
