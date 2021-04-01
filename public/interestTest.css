@@ -1,0 +1,73 @@
+/* Master Stlyes */
+body {
+    margin: 0px;
+    background-color: rgb(209, 201, 201);
+    /* orignal has 8px, we remove it and put it to 0 */
+}
+
+.search
+{
+    font-size: large;
+}
+
+#dropbox
+{
+    padding-top: 25px;
+    text-align: center;
+    background-color: #c2b1b4;
+}
+
+button
+{
+    font-family: 'Ubuntu', sans-serif;
+    
+    width: auto;
+    height: auto;
+    line-height: 1;
+    font-size: small;
+    font-weight: normal;
+    letter-spacing: 1px;
+    border: 1px solid #000000;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .35s;
+}
+
+button:hover
+{
+    background-color: #c2b1b4;
+    
+}
+
+#personalityOptions
+{
+    color: #000000;
+}
+
+.personalityMajors
+{
+    display: grid;   
+}
+
+.PersonalityName
+{
+    border: 1px solid black;
+    font-size:25px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.majorList
+{
+    columns: 3;
+    color: #000000;
+}
+
+li
+{
+    margin: 10px;
+}
